@@ -20,3 +20,7 @@
   color: darkmagenta;
   height: 100%;
 }
+
+.search input {
+  font-family: 'Trirong', serif;
+}

@@ -34,10 +34,12 @@
   height: auto;
   width: auto;
   overflow: hidden;
+  border-radius: 16px;
 }
 
 .modal .centered .image-detail-modal .modal-text-section {
   text-align: center;
+  font-family: 'Trirong', serif;
 }
 
 .modal .centered .image-detail-modal .modal-button {

@@ -1,6 +1,18 @@
-.image-in-gallery img {
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: center;
+}
+
+.image-gallery .image-in-gallery img {
   height: 150px;
   width: 150px;
   padding: 2.5px 5px;
   border-radius: 30px;
+  object-fit: cover;
+}
+
+.image-gallery .image-in-gallery img:hover {
+  opacity: 0.5;
 }
