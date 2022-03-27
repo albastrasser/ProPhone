@@ -21,7 +21,6 @@ const SearchField = () => {
             `https://pixabay.com/api/?key=${apiKey}&q=${searchValue}&image_type=photo`
           );
           setImages(apiResponse.data.hits);
-          console.log(apiResponse.data.hits, 'hits');
         } catch (error) {
           console.log(error, 'There was a problem getting images from Pixabay');
         }
