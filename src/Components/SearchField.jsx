@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ImageGallery from './ImageGallery';
 import ImageDetail from './ImageDetail';
+import Header from './Header';
 import { BsSearch } from 'react-icons/bs';
 import './SearchField.css';
 
@@ -37,6 +38,7 @@ const SearchField = () => {
 
   return (
     <div>
+      <Header />
       <div className="search">
         <span className="icon">
           <BsSearch />

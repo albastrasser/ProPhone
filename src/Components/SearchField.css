@@ -1,5 +1,5 @@
 .search {
-  height: 32px;
+  height: 50px;
 }
 
 .search .main-page-search {
@@ -15,8 +15,8 @@
 .search .icon {
   position: absolute;
   left: 15px;
-  top: 9px;
+  top: 109px;
   font-size: 25px;
-  color: #4b00ff;
+  color: darkmagenta;
   height: 100%;
 }
