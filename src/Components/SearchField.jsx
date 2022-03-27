@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ImageGallery from './ImageGallery';
 import ImageDetail from './ImageDetail';
+import { BsSearch } from 'react-icons/bs';
+import './SearchField.css';
 
 const SearchField = () => {
   const [searchValue, setSearchValue] = useState('');
@@ -35,12 +37,18 @@ const SearchField = () => {
 
   return (
     <div>
-      <input
-        type="search"
-        placeholder="Search here"
-        value={searchValue}
-        onChange={(e) => setSearchValue(e.target.value)}
-      />
+      <div className="search">
+        <span className="icon">
+          <BsSearch />
+        </span>
+        <input
+          className="main-page-search"
+          type="search"
+          placeholder="Search here"
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
+        />
+      </div>
       {renderImageGallery()}
       {isModalOpen && (
         <ImageDetail

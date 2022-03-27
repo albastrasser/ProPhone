@@ -1,0 +1,22 @@
+.search {
+  height: 32px;
+}
+
+.search .main-page-search {
+  border: 2px solid #eee;
+  padding: 5px 10px 5px 50px;
+  font-size: 18px;
+  line-height: 30px;
+  outline: 0;
+  display: block;
+  width: 100%;
+}
+
+.search .icon {
+  position: absolute;
+  left: 15px;
+  top: 9px;
+  font-size: 25px;
+  color: #4b00ff;
+  height: 100%;
+}
