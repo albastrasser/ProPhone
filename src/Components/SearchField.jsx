@@ -52,11 +52,7 @@ const SearchField = () => {
       </div>
       {renderImageGallery()}
       {isModalOpen && (
-        <ImageDetail
-          transparent={true}
-          image={imageDetail}
-          setImageDetail={setImageDetail}
-        />
+        <ImageDetail image={imageDetail} setImageDetail={setImageDetail} />
       )}
     </div>
   );
