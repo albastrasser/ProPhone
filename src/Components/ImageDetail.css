@@ -31,9 +31,7 @@
   flex: 1;
   max-width: 390px;
   max-height: 390px;
-  height: auto;
-  width: auto;
-  overflow: hidden;
+  object-fit: cover;
   border-radius: 16px;
 }
 
