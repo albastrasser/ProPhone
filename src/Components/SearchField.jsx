@@ -7,6 +7,7 @@ const SearchField = () => {
   const [searchValue, setSearchValue] = useState('');
   const [images, setImages] = useState([]);
   const [imageDetail, setImageDetail] = useState(null);
+  const isModalOpen = imageDetail ? true : false;
 
   useEffect(() => {
     if (searchValue.length) {
@@ -26,13 +27,9 @@ const SearchField = () => {
     } else setImages([]);
   }, [searchValue]);
 
-  const renderImageGalleryOrDetail = () => {
-    if (images.length && !imageDetail) {
+  const renderImageGallery = () => {
+    if (images.length) {
       return <ImageGallery images={images} setImageDetail={setImageDetail} />;
-    } else if (imageDetail) {
-      return (
-        <ImageDetail image={imageDetail} setImageDetail={setImageDetail} />
-      );
     }
   };
 
@@ -44,7 +41,14 @@ const SearchField = () => {
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
       />
-      {renderImageGalleryOrDetail()}
+      {renderImageGallery()}
+      {isModalOpen && (
+        <ImageDetail
+          transparent={true}
+          image={imageDetail}
+          setImageDetail={setImageDetail}
+        />
+      )}
     </div>
   );
 };
