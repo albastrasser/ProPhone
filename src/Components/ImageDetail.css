@@ -21,13 +21,19 @@
   border-radius: 16px;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
   background: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal .centered .image-detail-modal img {
   flex: 1;
   max-width: 390px;
   max-height: 390px;
-  padding: 55px 55px 0 55px;
+  height: auto;
+  width: auto;
+  overflow: hidden;
 }
 
 .modal .centered .image-detail-modal .modal-text-section {
