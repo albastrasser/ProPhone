@@ -31,5 +31,20 @@
   resize: 'center';
 }
 
-.modal .centered .image-detail-modal {
+.modal .centered .image-detail-modal .modal-text-section {
+  text-align: center;
+}
+
+.modal .centered .image-detail-modal .modal-button {
+  background: darkmagenta;
+  border-radius: 8px;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
+
+.modal .centered .image-detail-modal .modal-button:hover {
+  background: rgb(65, 1, 65);
 }

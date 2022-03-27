@@ -11,9 +11,13 @@ export const ImageDetail = (props) => {
             src={image.largeImageURL}
             alt={`Enlarged view with the tags ${image.tags}`}
           />
-          <div>{image.tags}</div>
-          <div>by: {image.user}</div>
-          <button onClick={() => setImageDetail(null)}>Close</button>
+          <div className="modal-text-section">
+            <div>{image.tags}</div>
+            <div>by: {image.user}</div>
+          </div>
+          <button className="modal-button" onClick={() => setImageDetail(null)}>
+            Close
+          </button>
         </div>
       </div>
     </div>
