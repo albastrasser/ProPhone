@@ -50,6 +50,7 @@
   position: fixed;
   left: 10px;
   bottom: 10px;
+  font-family: 'Trirong', serif;
 }
 
 .modal .centered .image-detail-modal .modal-button:hover {
